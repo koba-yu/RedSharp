@@ -1,5 +1,5 @@
 Red [
-	Title:	"get files or directrories"
+	Title:	"get files, optionally recursively"
 	Author:	"Koba-yu"
 	File:	%get-files.red
 ]
