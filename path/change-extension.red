@@ -20,6 +20,6 @@ path: context [
 		]
 
 		append end ext
-		join parts "/"
+		string/join parts "/"
 	]
 ]
