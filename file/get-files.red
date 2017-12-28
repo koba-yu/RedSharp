@@ -9,13 +9,12 @@ file: context [
 		"get files on the directory"
 		dir [file! string!] "target directory"
 		/deep "get files recursively"
+		return: [block!]
 	][
 		collect [foreach d read dir [
 				either equal? last d #"/" [
 					if deep [foreach r get-files/deep join [dir d] "/" [keep r]]
-				][
-					keep d
-				]
+				][keep d]
 			]
 		]
 	]
