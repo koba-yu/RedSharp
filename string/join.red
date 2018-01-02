@@ -6,9 +6,9 @@ Red [
 
 string: context [
 	join: function [
-		"make a concatenated string with the specified delimeter"
-		values [block!] "values to be concatenated"
-		dlm [string! char!] "seperator string"
+		"Make a concatenated string with the specified delimeter"
+		values [block!] "Values to be concatenated"
+		dlm [string! char!] "Seperator string"
 		return: [string!]
 	][
 		values: copy values

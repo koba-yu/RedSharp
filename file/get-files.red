@@ -6,9 +6,9 @@ Red [
 
 file: context [
 	get-files: function [
-		"get files on the directory"
-		dir [file! string!] "target directory"
-		/deep "get files recursively"
+		"Get files on the directory"
+		dir [file! string!] "Target directory"
+		/deep "Get files recursively"
 		return: [block!]
 	][
 		collect [foreach d read dir [
