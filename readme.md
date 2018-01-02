@@ -1,7 +1,7 @@
 # RedSharp
 A set of general Red functions with similar syntax to .NET C# methods.  
 The function design goes along common usability of C# and Red.  
-List of implemented functions is https://github.com/koba-yu/RedSharp/wiki/Implemented-functions[here]
+List of implemented functions is [here](https://github.com/koba-yu/RedSharp/wiki/Implemented-functions)
 
 # For what I make this repo?
 ## 1st Reason
