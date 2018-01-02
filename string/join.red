@@ -12,6 +12,10 @@ string: context [
 		return: [string!]
 	][
 		values: copy values
-		rejoin collect [while [keep take values not empty? values] [keep dlm]]
+		rejoin collect [while [
+			keep take values
+			not empty? values
+			][keep dlm]
+		]
 	]
 ]
