@@ -4,6 +4,5 @@ Red [
 	File:	%redsharp.red
 ]
 
-do %./string/join.red
-do %./path/change-extension.red
-do %./file/get-files.red
+do %./source/string.red
+do %./source/file.red

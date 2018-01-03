@@ -1,7 +1,7 @@
 Red [
-	Title:	"function to join string with delimeter"
+	Title:	"Function to join string with delimeter"
 	Author:	"Koba-yu"
-	File:	%join.red
+	File:	%string.red
 ]
 
 string: context [
