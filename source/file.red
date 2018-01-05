@@ -9,7 +9,7 @@ file: context [
 		"Get files on the directory"
 		dir [file! string!] "Target directory"
 		/deep "Get files recursively"
-		return: [block!]
+		return: [block!] "A block of files"
 	][
 		collect [foreach d read dir [
 				either equal? last d #"/" [
@@ -23,7 +23,7 @@ file: context [
 		"Change extension, or add if it does not have"
 		file [file!] "file! to be changed"
 		ext [string! word!] "Extension after the change (without .)"
-		return: [file!]
+		return: [file!] "Extension-changed file name"
 	][
 		suffix-length: either suffix: suffix? file [length? suffix][0]
 		file: copy/part file (length? file) - suffix-length

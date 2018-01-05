@@ -9,7 +9,7 @@ string: context [
 		"Make a concatenated string with the specified delimeter"
 		values [block!] "Values to be concatenated"
 		dlm [string! char!] "Seperator string"
-		return: [string!]
+		return: [string!] "The concatenated string"
 	][
 		values: copy values
 		rejoin collect [while [
