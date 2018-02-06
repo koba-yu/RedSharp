@@ -2,6 +2,7 @@ Red [
 	Title:	"Function to join string with delimeter"
 	Author:	"Koba-yu"
 	File:	%string.red
+	Tabs:	4
 ]
 
 string: context [
