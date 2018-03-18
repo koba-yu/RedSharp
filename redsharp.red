@@ -7,3 +7,4 @@ Red [
 
 do %./source/string.red
 do %./source/file.red
+do %./source/enumerable.red
