@@ -2,6 +2,7 @@ Red [
 	Title:	"Functions about file"
 	Author:	"Koba-yu"
 	File:	%file.red
+	Tabs:	4
 ]
 
 file: context [
