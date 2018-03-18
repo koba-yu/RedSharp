@@ -27,6 +27,6 @@ file: context [
 	][
 		suffix-length: either suffix: suffix? file [length? suffix][0]
 		file: copy/part file (length? file) - suffix-length
-		to file! rejoin [file "." mold ext]
+		to file! rejoin [file "." ext]
 	]
 ]
