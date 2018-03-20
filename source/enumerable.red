@@ -15,9 +15,10 @@ enumerable: context [
 		inner-selector: spec/5
 		outer-word: spec/6
 		outer-selector: spec/8
+		result-selector: at spec 9
 
 		if not-equal? mold spec/4 "=>" [throw "4th item must be '=>'"]
-		if not-equal? mold spec/7 "=>" [throw "5th item must be '=>'"]
+		if not-equal? mold spec/7 "=>" [throw "7th item must be '=>'"]
 
 		make-hash: function [temp-word items selector][
 			make hash! collect [foreach item items [
@@ -37,7 +38,7 @@ enumerable: context [
 				if none? get inner-word [continue]
 				set outer-word select outer-hash key
 				if none? get outer-word [continue]
-				keep do at spec 9
+				keep do result-selector
 			]
 		]
 	]
