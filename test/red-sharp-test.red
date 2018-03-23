@@ -50,10 +50,10 @@ dummies2: [#(
     誕生日: "1967/2/14"
 )]
 
-joined-results: enumerable/join [dummies1 dummies2
-	x => x/名前
-	y => y/名前
-	context [name: x/名前 gender: y/性別 address: x/アドレス]
+joined-results: enumerable/join [
+	x dummies1 [x/名前]
+	y dummies2 [y/名前]
+	[context [name: x/名前 gender: y/性別 address: x/アドレス]]
 ]
 
 ;

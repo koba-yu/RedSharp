@@ -9,21 +9,18 @@ enumerable: context [
 		spec [block!]
 		return: [block!]
 	][
-		inner: get spec/1
-		outer: get spec/2
-		inner-word: spec/3
-		inner-selector: spec/5
-		outer-word: spec/6
-		outer-selector: spec/8
-		result-selector: at spec 9
-
-		if not-equal? mold spec/4 "=>" [throw "4th item must be '=>'"]
-		if not-equal? mold spec/7 "=>" [throw "7th item must be '=>'"]
+		inner-word: spec/1
+		inner: do spec/2
+		inner-selector: spec/3
+		outer-word: spec/4
+		outer: do spec/5
+		outer-selector: spec/6
+		result-selector: spec/7
 
 		make-hash: function [temp-word items selector][
 			make hash! collect [foreach item items [
 					set temp-word item
-					keep get selector
+					keep do selector
 					keep item
 				]
 			]
