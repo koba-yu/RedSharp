@@ -9,53 +9,53 @@ Red [
 ; test data
 ;
 people1: [#(
-    名前: "諏訪 紗季"
-    ふりがな: "すわ さき"
-    アドレス: "suwa_saki@example.com"
-	年齢: "68"
+    name: "諏訪 紗季"
+    furigana: "すわ さき"
+    mail: "suwa_saki@example.com"
+	age: "68"
 ) #(
-    名前: "倉本 みき"
-    ふりがな: "くらもと みき"
-    アドレス: "kuramoto_miki@example.com"
-	年齢: "58"
+    name: "倉本 みき"
+    furigana: "くらもと みき"
+    mail: "kuramoto_miki@example.com"
+	age: "58"
 ) #(
-    名前: "越智 ジョージ"
-    ふりがな: "おち じょーじ"
-    アドレス: "ochi_george@example.com"
-	年齢: "48"
+    name: "越智 ジョージ"
+    furigana: "おち じょーじ"
+    mail: "ochi_george@example.com"
+	age: "48"
 ) #(
-    名前: "河合 康晴"
-    ふりがな: "かわい やすはる"
-    アドレス: "kawai_yasuharu@example.com"
-	年齢: "50"
+    name: "河合 康晴"
+    furigana: "かわい やすはる"
+    mail: "kawai_yasuharu@example.com"
+	age: "50"
 )]
 
 people2: [#(
-    名前: "諏訪 紗季"
-    性別: "女"
-    年齢: "68"
-    誕生日: "1949/10/9"
+    name: "諏訪 紗季"
+    gender: "女"
+    age: "68"
+    birthday: "1949/10/9"
 ) #(
-    名前: "倉本 みき"
-    性別: "女"
-    年齢: "24"
-    誕生日: "1959/2/4"
+    name: "倉本 みき"
+    gender: "女"
+    age: "24"
+    birthday: "1959/2/4"
 ) #(
-    名前: "越智 ジョージ"
-    性別: "男"
-    年齢: "48"
-    誕生日: "1969/6/16"
+    name: "越智 ジョージ"
+    gender: "男"
+    age: "48"
+    birthday: "1969/6/16"
 ) #(
-    名前: "田中 宏"
-    性別: "男"
-    年齢: "50"
-    誕生日: "1967/2/14"
+    name: "田中 宏"
+    gender: "男"
+    age: "50"
+    birthday: "1967/2/14"
 )]
 
 results: enumerable/join [
-	x people1 [x/名前]
-	y people2 [y/名前]
-	[context [name: x/名前 gender: y/性別 address: x/アドレス]]
+	x people1 [x/name]
+	y people2 [y/name]
+	[context [name: x/name gender: y/gender address: x/mail]]
 ]
 
 ;
