@@ -52,7 +52,7 @@ people2: [#(
     birthday: "1967/2/14"
 )]
 
-results: enumerable/join [
+results: query/join [
 	x people1 [x/name]
 	y people2 [y/name]
 	[context [name: x/name gender: y/gender address: x/mail]]

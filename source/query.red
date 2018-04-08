@@ -1,10 +1,10 @@
 Red [
 	Title:	"Function for enumerable"
 	Author:	"Koba-yu"
-	File:	%enumerable.red
+	File:	%query.red
 ]
 
-enumerable: context [
+query: context [
 	join: function [
 		spec [block!]
 		return: [block!]
